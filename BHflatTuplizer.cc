@@ -347,7 +347,7 @@ void BHflatTuplizer(std::string inFilename, std::string outFilename, std::string
         }
         if (!passMETfilterList) cout << "ERROR! This event should be filtered!" << endl;
         if ( runno == 254790 && (lumiblock==211 || lumiblock==395) ) {
-          sprintf(messageBuffer, "Event in lumiblock that could not be filtered skipped: run number %d lumi section %d event number %%lld\n", runno, lumiblock, evtno);
+          sprintf(messageBuffer, "Event in lumiblock that could not be filtered skipped: run number %d lumi section %d event number %lld\n", runno, lumiblock, evtno);
           outTextFile << messageBuffer;
           continue;
         }
